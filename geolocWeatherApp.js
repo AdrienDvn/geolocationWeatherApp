@@ -7,7 +7,7 @@ if ('geolocation' in navigator) {
     // console.log(position.coords.latitude);
     // console.log(position.coords.longitude);
 
-    const url = 'https://api.openweathermap.org/data/2.5/weather?lon=' + position.coords.longitude +'&lat='+position.coords.latitude +'&appid=YOURAPIKEYHERE&units=metric';
+    const url = 'https://api.openweathermap.org/data/2.5/weather?lon=' + position.coords.longitude +'&lat='+position.coords.latitude +'&appid=APIKEYHERE&units=metric';
     console.log(url);
 
     let request = new XMLHttpRequest();
@@ -50,7 +50,7 @@ function error() {
 
 function getTemperature(city) {
 
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=0fc7016bf14c97969c8d17acd7e995ec&units=metric'
+const url = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=0fc7APIKEYHERE7e995ec&units=metric'
 
   let request = new XMLHttpRequest();
   request.open('GET', url);
